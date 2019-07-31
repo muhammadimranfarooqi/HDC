@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="bloodcollection_print" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9441c708-950f-4dcf-b387-1052f0994d98">
+	<property name="ireport.zoom" value="1.2100000000000046"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="lab_no" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["F:\\workspace\\HDC\\WebContent\\WEB-INF\\reports\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from blood_collection where lab_no =  $P{lab_no}]]>
+	</queryString>
+	<field name="lab_no" class="java.lang.Integer"/>
+	<field name="barcode_data" class="java.lang.String"/>
+	<field name="sample_date" class="java.sql.Timestamp"/>
+	<field name="user_id" class="java.lang.Integer"/>
+	<field name="modification_date" class="java.sql.Timestamp"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="107" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="2" width="555" height="1" uuid="5f7f4bc5-03bb-44b4-aaa0-cb1b81deaf22"/>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="1" y="104" width="555" height="1" uuid="2d548e73-a59a-411f-868c-9dca846e2c0d"/>
+			</line>
+			<subreport>
+				<reportElement x="1" y="8" width="424" height="87" uuid="78f1f544-cd09-4a0b-b873-049175b13e9c"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "headings.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="663" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="662" width="555" height="1" uuid="eb02e6a0-2c30-4334-9aba-503b337fe634"/>
+			</line>
+			<staticText>
+				<reportElement x="1" y="10" width="551" height="23" forecolor="#000000" uuid="7e71ea52-12d6-470c-898c-e75edb5ce36f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Blood Collection]]></text>
+			</staticText>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="253" width="555" height="1" uuid="14b23795-f1e1-43c0-a761-fec81045426c"/>
+			</line>
+			<staticText>
+				<reportElement x="22" y="56" width="43" height="20" uuid="c62ea7a0-320c-4d91-935e-309b41172c5f"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pin No:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="65" y="56" width="153" height="20" uuid="bb69c6e0-7d3d-461f-9417-a5e835bf34c2"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lab_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="325" y="56" width="71" height="20" uuid="d9f6d9fa-fa2d-4780-8c5f-6fac81215e7d"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sample Date:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy h.mm a">
+				<reportElement x="396" y="56" width="156" height="20" uuid="d77cd0d2-9214-4a16-a47e-9274785a6328"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sample_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="114" y="134" width="100" height="20" uuid="10421bbd-76dd-4b21-9594-9cbf8ae677d9"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Barcode:]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="218" y="131" width="200" height="50" uuid="67c4e509-203d-493c-bc7e-4afa518f9c6b"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$F{barcode_data}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+			<textField>
+				<reportElement x="218" y="172" width="200" height="20" uuid="ea94b29b-2acd-4766-be4e-54671a7562c1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{barcode_data}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="13" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="10" splitType="Stretch"/>
+	</summary>
+</jasperReport>

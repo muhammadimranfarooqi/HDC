@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="finalreport_subphysician" language="groovy" pageWidth="280" pageHeight="802" columnWidth="280" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="cb5c4276-f012-40b7-84e5-2a9ca78e8527">
+	<property name="ireport.zoom" value="1.7715610000000017"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="lab_no" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT * FROM PHYSICIAN where lab_no = $P{lab_no}]]>
+	</queryString>
+	<field name="lab_no" class="java.lang.Integer"/>
+	<field name="eye_left" class="java.lang.String"/>
+	<field name="eye_right" class="java.lang.String"/>
+	<field name="ear_left" class="java.lang.String"/>
+	<field name="ear_right" class="java.lang.String"/>
+	<field name="heart" class="java.lang.String"/>
+	<field name="height" class="java.lang.String"/>
+	<field name="weight" class="java.lang.String"/>
+	<field name="hernia" class="java.lang.String"/>
+	<field name="varicos_veins" class="java.lang.String"/>
+	<field name="extrenities" class="java.lang.String"/>
+	<field name="deformities" class="java.lang.String"/>
+	<field name="skin" class="java.lang.String"/>
+	<field name="user_id" class="java.lang.Integer"/>
+	<field name="modification_date" class="java.sql.Timestamp"/>
+	<field name="bp" class="java.lang.String"/>
+	<field name="comments" class="java.lang.String"/>
+	<detail>
+		<band height="285" splitType="Stretch">
+			<textField>
+				<reportElement x="192" y="0" width="35" height="20" uuid="edfd58f9-5946-4886-9f2b-015f89f17fe3"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{eye_left}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="177" height="20" uuid="4d422e90-a5a6-4955-9d31-d94460acd2a1"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EYE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="102" width="103" height="20" uuid="acc34e5d-f794-4db2-9c9f-8de3bb2e70dc"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="227" y="0" width="15" height="20" uuid="f6d3404d-ca88-439d-9666-1beace2d7cd3"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rt.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="242" y="0" width="38" height="20" uuid="1d007783-99c5-4f9c-bdb7-1e305d05c35e"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{eye_right}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="42" width="280" height="20" forecolor="#000000" uuid="362c6fb8-c01e-402e-8edc-841a1933f46e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SYSTEMATIC EXAM: CARDIO-VASCULAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="62" width="177" height="20" uuid="35fdfd1f-c00c-4d35-9ed3-8e30274246db"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[B.P.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="82" width="177" height="20" uuid="c5ab7c8b-4233-4822-b4bc-c5a53ce9df73"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[HEART]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="62" width="103" height="20" uuid="b7c60ecb-d90f-46a4-8dca-0d68bc5e0789"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="177" y="82" width="103" height="20" uuid="bc77f275-7fbc-4210-ba5a-ba8161e5bd66"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{heart}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="102" width="177" height="20" forecolor="#000000" uuid="91cfc465-77bc-4a39-ae99-1f98628c5501"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GASTRO INTESTINAL:ABDOMEN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="122" width="177" height="20" forecolor="#000000" uuid="18678ea5-9a0d-47e5-be9e-c89ebd77035f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OTHERS: HERNIA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="122" width="103" height="20" uuid="33b10b3c-7dfb-4bdf-9c65-b4fdeb4db034"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hernia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="142" width="177" height="20" forecolor="#000000" uuid="e7a828b7-fe6a-41fe-a9e1-644503f91c43"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VARICOSE VEINS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="162" width="177" height="20" forecolor="#000000" uuid="7ada17da-384b-4433-ac8e-332f9f314756"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EXTREMITIES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="182" width="177" height="20" forecolor="#000000" uuid="d342cec8-642d-4905-b12d-8e2ab3389f5c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DEFORMITIES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="202" width="177" height="20" forecolor="#000000" uuid="6f515f48-e398-4226-b66d-1f69f8f8614a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SKIN]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="142" width="103" height="20" uuid="81ee741d-fd0d-43da-a666-8c535e9ec6a4"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{varicos_veins}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="177" y="162" width="103" height="20" uuid="389c370d-5e3a-4ee3-9cf9-32c8a3920e72"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{extrenities}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="177" y="182" width="103" height="20" uuid="6315cf6d-7461-424b-ab4f-6cfa8fc1e387"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{deformities}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="177" y="202" width="103" height="20" uuid="9ff84f49-e146-46fc-b9e0-b25926b5a66a"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{skin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="222" width="177" height="20" forecolor="#000000" uuid="a62304f5-3305-4efc-8a1e-c9e14a40061c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VENERAL DISEASES: CLINICAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="262" width="177" height="20" forecolor="#000000" uuid="3cc71536-b500-4676-a70f-b15f80ccfbed"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PSYCHIATRY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="222" width="103" height="20" uuid="1d53c770-f78f-4c57-9af6-a0874ffe5d8b"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="262" width="103" height="20" uuid="83683248-9c14-4fff-9b89-c8cfedc9c883"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="0" width="15" height="20" uuid="8e96029f-cbd6-4c01-a385-439b6093a7b7"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lt.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="177" height="20" uuid="6a52a3cc-f55e-40ef-a19d-896292216477"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[EAR:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="192" y="20" width="35" height="20" uuid="c32f309b-dd1d-4eeb-9eee-468948ba6201"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ear_left}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="227" y="20" width="15" height="20" uuid="abbde603-2610-4030-889c-c9990c182f62"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rt.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="20" width="15" height="20" uuid="7bff2f52-5747-40d7-9db7-8307791d6573"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lt.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="242" y="20" width="38" height="20" uuid="00a0c3e1-e6fb-4616-8e11-415f20aeaba9"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ear_right}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="242" width="177" height="20" forecolor="#000000" uuid="56325aea-fbd8-4e1f-a44f-94a1ebc22c63"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[C.N.S.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="242" width="103" height="20" uuid="736691ab-ec60-4724-a2f5-449b88557384"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAD]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperPrint xmlns="http://jasperreports.sourceforge.net/jasperreports/print" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/print http://jasperreports.sourceforge.net/xsd/jasperprint.xsd" name="finalreport_labreport" pageWidth="280" pageHeight="802" topMargin="0" leftMargin="0" bottomMargin="0" rightMargin="0" locale="en_US" timezone="Asia/Karachi">
+	<property name="net.sf.jasperreports.export.xml.start.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.end.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.page.count" value="1"/>
+	<origin band="detail"/>
+	<page>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="699cec5f-4735-4f65-8efd-62efacd10df1" x="0" y="41" width="177" height="20" origin="0" srcId="1" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[ALBUMIN]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="44a19d8e-5c60-4ce4-bc3d-b1f1eb1e82df" x="0" y="21" width="177" height="20" origin="0" srcId="2" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[SUGAR]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="72f4257f-df3a-4329-9e3b-ac3b9e17ad33" x="177" y="41" width="103" height="20" origin="0" srcId="3" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Detected]]></textContent>
+		</text>
+		<text textAlignment="Left" verticalAlignment="Middle" textHeight="13.798828" lineSpacingFactor="1.1499023" leadingOffset="-2.3466797">
+			<reportElement uuid="c5e85890-d6d1-4928-afa3-ebf992c5964c" x="0" y="1" width="280" height="20" forecolor="#000000" origin="0" srcId="4" printId="1"/>
+			<font fontName="Arial" size="12" isBold="true"/>
+			<textContent><![CDATA[URINE:]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="ab1aebdc-78e3-4df6-80a5-a9529b49fb89" x="177" y="21" width="103" height="20" origin="0" srcId="5" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="0.0">
+			<reportElement uuid="c66a2d25-7903-4f14-a85e-a40d75a5c9f7" x="177" y="61" width="103" height="20" origin="0" srcId="6" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="99d6e863-6991-476e-92df-3850473911e2" x="0" y="61" width="177" height="20" origin="0" srcId="7" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[BILHARZIASIS (IF ENDEMIC)]]></textContent>
+		</text>
+		<text textAlignment="Left" verticalAlignment="Middle" textHeight="13.798828" lineSpacingFactor="1.1499023" leadingOffset="-2.3466797">
+			<reportElement uuid="cc6ff945-2ac2-42d7-86a2-24e283b1d3a3" x="0" y="81" width="280" height="20" forecolor="#000000" origin="0" srcId="8" printId="1"/>
+			<font fontName="Arial" size="12" isBold="true"/>
+			<textContent><![CDATA[STOOL:]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="5b807286-1c5a-4700-b6fa-889fad2482dd" x="177" y="101" width="103" height="20" origin="0" srcId="9" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="ef5786e4-88a7-403c-8026-2aa96b5d0ad1" x="0" y="101" width="177" height="20" origin="0" srcId="10" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="bfea98c4-2bac-4cb4-93f0-9617077d9c92" x="0" y="121" width="177" height="20" origin="0" srcId="11" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="a8b12836-0b76-48b9-b670-93c9e54e7ed8" x="177" y="121" width="103" height="20" origin="0" srcId="12" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="6ea0f78d-9d7d-41a9-8189-4f46e557c405" x="0" y="141" width="177" height="20" origin="0" srcId="13" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="f8a4d6b0-48d1-47be-9e8d-573f7190b436" x="177" y="141" width="103" height="20" origin="0" srcId="14" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="66cfb644-fb6d-4f33-a012-122f8635f236" x="0" y="161" width="177" height="20" origin="0" srcId="15" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="35165462-ec8b-4bfc-ad6d-bc8dbe2ba712" x="177" y="161" width="103" height="20" origin="0" srcId="16" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="1915dd27-351d-44c9-bede-f0b56db134ca" x="0" y="181" width="177" height="20" origin="0" srcId="17" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="1e867559-daed-4b0a-a750-e1a74e0570d6" x="177" y="181" width="103" height="20" origin="0" srcId="18" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text textAlignment="Left" verticalAlignment="Middle" textHeight="13.798828" lineSpacingFactor="1.1499023" leadingOffset="-2.3466797">
+			<reportElement uuid="c0dbee9f-7e97-4ff0-8969-ed73b11db387" x="0" y="201" width="280" height="20" forecolor="#000000" origin="0" srcId="19" printId="1"/>
+			<font fontName="Arial" size="12" isBold="true"/>
+			<textContent><![CDATA[BLOOD:]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="b0fdb6f6-2124-45d4-95c6-9ed1f18f723d" x="0" y="221" width="177" height="20" origin="0" srcId="20" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="b9c28766-0af7-4941-82b5-d225d6d0dcf1" x="177" y="221" width="103" height="20" origin="0" srcId="21" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="41bd2990-8e1a-4586-a0d7-b931da50a92a" x="0" y="241" width="177" height="20" origin="0" srcId="22" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="4c55880b-183b-4d60-bfa9-c8080c950edf" x="177" y="241" width="103" height="20" origin="0" srcId="23" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="9840a8cb-4487-4818-937b-d97677fbd8b7" x="0" y="261" width="177" height="20" origin="0" srcId="24" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="30bc5f4d-9ee7-40aa-8434-d6b60f0ada45" x="177" y="261" width="103" height="20" origin="0" srcId="25" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="0c9a4c5b-415d-4f7a-8a11-e3b87c2cb8d7" x="0" y="281" width="177" height="20" origin="0" srcId="26" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="09ff08ad-25cf-439f-a1ae-48b89adde0dd" x="177" y="281" width="103" height="20" origin="0" srcId="27" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="c65806c1-0101-4984-b4e9-7d168b9c73e6" x="0" y="301" width="177" height="20" origin="0" srcId="28" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="b110e69d-8332-4ccf-ab40-2f04e8db3086" x="177" y="301" width="103" height="20" origin="0" srcId="29" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text textAlignment="Left" verticalAlignment="Middle" textHeight="13.798828" lineSpacingFactor="1.1499023" leadingOffset="-2.3466797">
+			<reportElement uuid="9402c14d-20d8-4e4a-ab2e-b6e4f3499d55" x="0" y="321" width="280" height="20" forecolor="#000000" origin="0" srcId="30" printId="1"/>
+			<font fontName="Arial" size="12" isBold="true"/>
+			<textContent><![CDATA[SEROLOGY:]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="5e85850f-7592-4ece-86b9-ac329c9eca0b" x="0" y="341" width="177" height="20" origin="0" srcId="31" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="24dee142-1931-49cf-9f22-c13265697995" x="177" y="341" width="103" height="20" origin="0" srcId="32" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="bc3986ac-7df2-4264-b598-f07e76cd6cf7" x="0" y="361" width="177" height="20" origin="0" srcId="33" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="4ebe549a-b0e6-4f4a-90bf-c1612aeaabee" x="177" y="361" width="103" height="20" origin="0" srcId="34" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="9d2115c5-ff00-43b2-8326-7abc5d8596e1" x="0" y="381" width="177" height="20" origin="0" srcId="35" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[1. HELMINTHES]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="094e8709-ea6b-4f86-8f24-d3125f9119cf" x="177" y="381" width="103" height="20" origin="0" srcId="36" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Absent]]></textContent>
+		</text>
+		<text textAlignment="Left" verticalAlignment="Middle" textHeight="13.798828" lineSpacingFactor="1.1499023" leadingOffset="-2.3466797">
+			<reportElement uuid="73599e8c-c182-4349-ad24-8192f30f7804" x="0" y="401" width="280" height="20" forecolor="#000000" origin="0" srcId="37" printId="1"/>
+			<font fontName="Arial" size="12" isBold="true"/>
+			<textContent><![CDATA[ELISA]]></textContent>
+		</text>
+	</page>
+</jasperPrint>

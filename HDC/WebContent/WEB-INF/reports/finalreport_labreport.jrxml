@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="finalreport_labreport" language="groovy" pageWidth="280" pageHeight="802" columnWidth="280" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7c61d8bc-6c30-435b-a868-88b11f98bfb3">
+	<property name="ireport.zoom" value="1.3310000000000015"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="lab_no" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM LAB_REPORT where lab_no = $P{lab_no}]]>
+	</queryString>
+	<field name="lab_no" class="java.lang.Integer"/>
+	<field name="sugar" class="java.lang.String"/>
+	<field name="albumin" class="java.lang.String"/>
+	<field name="bilharziasis" class="java.lang.String"/>
+	<field name="blood_group" class="java.lang.String"/>
+	<field name="hemoglobin" class="java.lang.String"/>
+	<field name="thick_film_for" class="java.lang.String"/>
+	<field name="malaria" class="java.lang.String"/>
+	<field name="micro_falria" class="java.lang.String"/>
+	<field name="helminthes" class="java.lang.String"/>
+	<field name="glardia" class="java.lang.String"/>
+	<field name="bilharziasis_culture" class="java.lang.String"/>
+	<field name="salmonella" class="java.lang.String"/>
+	<field name="cholera" class="java.lang.String"/>
+	<field name="hiv_ii" class="java.lang.String"/>
+	<field name="h_bs_ag" class="java.lang.String"/>
+	<field name="anti_hcv" class="java.lang.String"/>
+	<field name="rbs" class="java.lang.String"/>
+	<field name="lfts" class="java.lang.String"/>
+	<field name="bilrubin" class="java.lang.String"/>
+	<field name="alt" class="java.lang.String"/>
+	<field name="alp" class="java.lang.String"/>
+	<field name="alb" class="java.lang.String"/>
+	<field name="rft" class="java.lang.String"/>
+	<field name="creatinine" class="java.lang.String"/>
+	<field name="tpha" class="java.lang.String"/>
+	<field name="user_id" class="java.lang.Integer"/>
+	<field name="modification_date" class="java.sql.Timestamp"/>
+	<field name="comments" class="java.lang.String"/>
+	<detail>
+		<band height="422" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="36" width="177" height="15" uuid="699cec5f-4735-4f65-8efd-62efacd10df1"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[ALBUMIN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="21" width="177" height="15" uuid="44a19d8e-5c60-4ce4-bc3d-b1f1eb1e82df"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[SUGAR]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="36" width="103" height="15" uuid="72f4257f-df3a-4329-9e3b-ac3b9e17ad33"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{albumin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="1" width="280" height="20" forecolor="#000000" uuid="c5e85890-d6d1-4928-afa3-ebf992c5964c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[URINE:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="21" width="103" height="15" uuid="ab1aebdc-78e3-4df6-80a5-a9529b49fb89"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sugar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="177" y="51" width="103" height="15" uuid="c66a2d25-7903-4f14-a85e-a40d75a5c9f7"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bilharziasis}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="51" width="177" height="15" uuid="99d6e863-6991-476e-92df-3850473911e2"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[BILHARZIASIS (IF ENDEMIC)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="66" width="280" height="20" forecolor="#000000" uuid="cc6ff945-2ac2-42d7-86a2-24e283b1d3a3"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[STOOL:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="86" width="103" height="15" uuid="5b807286-1c5a-4700-b6fa-889fad2482dd"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{helminthes}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="86" width="177" height="15" uuid="ef5786e4-88a7-403c-8026-2aa96b5d0ad1"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[1. HELMINTHES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="101" width="177" height="15" uuid="bfea98c4-2bac-4cb4-93f0-9617077d9c92"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[2. GIARDIA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="101" width="103" height="15" uuid="a8b12836-0b76-48b9-b670-93c9e54e7ed8"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{glardia}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="116" width="177" height="15" uuid="6ea0f78d-9d7d-41a9-8189-4f46e557c405"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[3. BILHARZIASIS (IF ENDEMIC) CULTURE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="116" width="103" height="15" uuid="f8a4d6b0-48d1-47be-9e8d-573f7190b436"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bilharziasis_culture}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="131" width="177" height="15" uuid="66cfb644-fb6d-4f33-a012-122f8635f236"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[4. SALMONELLA/SHEGELLA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="131" width="103" height="15" uuid="35165462-ec8b-4bfc-ad6d-bc8dbe2ba712"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{salmonella}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="146" width="177" height="15" uuid="1915dd27-351d-44c9-bede-f0b56db134ca"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[5. CHOLERA (IF ENDEMIC)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="146" width="103" height="15" uuid="1e867559-daed-4b0a-a750-e1a74e0570d6"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cholera}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="161" width="280" height="20" forecolor="#000000" uuid="c0dbee9f-7e97-4ff0-8969-ed73b11db387"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BLOOD:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="181" width="177" height="15" uuid="b0fdb6f6-2124-45d4-95c6-9ed1f18f723d"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[BLOOD GROUP]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="181" width="103" height="15" uuid="b9c28766-0af7-4941-82b5-d225d6d0dcf1"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{blood_group}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="196" width="177" height="15" uuid="41bd2990-8e1a-4586-a0d7-b931da50a92a"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[HAEMOGLOBIN]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="196" width="103" height="15" uuid="4c55880b-183b-4d60-bfa9-c8080c950edf"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hemoglobin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="211" width="177" height="15" uuid="9840a8cb-4487-4818-937b-d97677fbd8b7"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[THICK FILM FOR]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="211" width="103" height="15" uuid="30bc5f4d-9ee7-40aa-8434-d6b60f0ada45"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{thick_film_for}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="226" width="177" height="15" uuid="0c9a4c5b-415d-4f7a-8a11-e3b87c2cb8d7"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[1. MALARIA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="226" width="103" height="15" uuid="09ff08ad-25cf-439f-a1ae-48b89adde0dd"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{malaria}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="241" width="177" height="15" uuid="c65806c1-0101-4984-b4e9-7d168b9c73e6"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[2. MICRO FILARIA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="241" width="103" height="15" uuid="b110e69d-8332-4ccf-ab40-2f04e8db3086"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{micro_falria}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="256" width="280" height="20" forecolor="#000000" uuid="9402c14d-20d8-4e4a-ab2e-b6e4f3499d55"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SEROLOGY:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="276" width="177" height="15" uuid="5e85850f-7592-4ece-86b9-ac329c9eca0b"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[1. R.B.S.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="276" width="103" height="15" uuid="24dee142-1931-49cf-9f22-c13265697995"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rbs}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="291" width="177" height="15" uuid="bc3986ac-7df2-4264-b598-f07e76cd6cf7"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[2. L.F.T.S.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="291" width="103" height="15" uuid="4ebe549a-b0e6-4f4a-90bf-c1612aeaabee"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lfts}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="306" width="177" height="15" uuid="9d2115c5-ff00-43b2-8326-7abc5d8596e1"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[3. CREATININE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="306" width="103" height="15" uuid="094e8709-ea6b-4f86-8f24-d3125f9119cf"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{creatinine}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="321" width="280" height="20" forecolor="#000000" uuid="73599e8c-c182-4349-ad24-8192f30f7804"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ELISA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="341" width="103" height="15" uuid="7acfbd51-3b7e-4406-b8ec-dba12f4270fd"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hiv_ii}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="341" width="177" height="15" uuid="50723359-ae61-4538-96f0-f90056193bfa"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[1. HIV I & II]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="356" width="103" height="15" uuid="cd4b4eed-6da5-4213-b2e1-36fc29cc2398"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{h_bs_ag}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="356" width="177" height="15" uuid="09616cc5-7224-4a77-9102-d8622ad14c19"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[2. HBs Ag]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="371" width="103" height="15" uuid="f7ae02ff-ccdf-4b34-ae36-cd8d96603a03"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{anti_hcv}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="371" width="177" height="15" uuid="ab934289-2a2e-4fbe-9170-94e87cac7416"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[3. Anti HCV]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="386" width="280" height="20" forecolor="#000000" uuid="b41a4843-85a7-4345-abc7-d1610a4474d4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VDRL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="406" width="103" height="15" uuid="19b665fe-a441-40bf-82f6-9ceec403f375"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tpha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="406" width="177" height="15" uuid="3ba07adb-c771-4c49-8ac3-763766c591d6"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[TPHA (IF VDRL POSITIVE)]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

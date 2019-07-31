@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperPrint xmlns="http://jasperreports.sourceforge.net/jasperreports/print" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/print http://jasperreports.sourceforge.net/xsd/jasperprint.xsd" name="finalreport_barcode" pageWidth="280" pageHeight="802" topMargin="0" leftMargin="0" bottomMargin="0" rightMargin="0" locale="en_US" timezone="Asia/Karachi">
+	<property name="net.sf.jasperreports.export.xml.start.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.end.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.page.count" value="1"/>
+	<origin band="detail"/>
+	<page>
+		<image scaleImage="RetainShape">
+			<reportElement uuid="8d34750b-d476-4c4e-bca9-58131b97da87" x="4" y="3" width="214" height="50" origin="0" srcId="1" printId="1"/>
+			<imageSource isEmbedded="true">
+				<![CDATA[iVBORw0KGgoAAAANSUhEUgAAARwAAAAyCAYAAACOJWQSAAABc0lEQVR42u3UMQrAMAgAQP//6ZYM
+XQId0mja0Atk0EER5SIijvb71+eveDQ/Wi+r7l28ar7sPlX93trP03673MHsHF+Zp+COgQMc4AAH
+OMABDnCAAxzgAAc4wAEOcIADHOAABzjAAQ5wgAMc4AAHOMABDnCAAxzgAAc4wAEOcIADHOAABzjA
+AQ5wgAMc4AAHOMABDnCAAxzgAAc4wAEOcIADHOAABzjAAQ5wgAMc4AAHOMABDnCAAxzgAAc4wAEO
+cIADHOAABzjAAQ5wgAMc4AAHOMABDnCAAxzgAAc4wAEOcIADHOAABzjAAQ5wgAMc4AAHOMABDnCA
+AxzgAAc4wAEOcIADHOAABzjAAQ5wgAMc4AAHOMABDnCAAxzgAAc4wAEOcIADHOAABzjAAQ5wgAMc
+4AAHOMABDnCAAxzgAAc4wAEOcIADHOAABzjAAQ5wgAMc4AAHOMABDnCAAxzgAAc4wAEOcIADHOAA
+BzjAAc7fwDkBEKYoCgELnfAAAAAASUVORK5CYII=]]>
+			</imageSource>
+		</image>
+	</page>
+</jasperPrint>

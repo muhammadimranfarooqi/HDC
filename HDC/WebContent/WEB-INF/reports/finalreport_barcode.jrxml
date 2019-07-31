@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="finalreport_barcode" language="groovy" pageWidth="280" pageHeight="802" columnWidth="280" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="d3cd398c-0a3e-4284-bf6d-8d63ea2c6f9a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="lab_no" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from blood_collection where lab_no = $P{lab_no}]]>
+	</queryString>
+	<field name="lab_no" class="java.lang.Integer"/>
+	<field name="barcode_data" class="java.lang.String"/>
+	<field name="sample_date" class="java.lang.String"/>
+	<field name="user_id" class="java.lang.Integer"/>
+	<field name="modification_date" class="java.sql.Timestamp"/>
+	<detail>
+		<band height="57" splitType="Stretch">
+			<componentElement>
+				<reportElement x="4" y="3" width="214" height="50" uuid="8d34750b-d476-4c4e-bca9-58131b97da87"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code39" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$F{barcode_data}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

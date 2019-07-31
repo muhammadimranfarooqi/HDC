@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xray_print_xraydata" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e8b03c0f-4a63-484b-9f8b-9a901644a536">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="lab_no" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from xray where lab_no = $P{lab_no}]]>
+	</queryString>
+	<field name="lab_no" class="java.lang.Integer"/>
+	<field name="chest_xray" class="java.lang.String"/>
+	<field name="reason" class="java.lang.String"/>
+	<field name="user_id" class="java.lang.Integer"/>
+	<field name="modification_date" class="java.sql.Timestamp"/>
+	<field name="comments" class="java.lang.String"/>
+	<detail>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="3f32ee37-921e-4e47-8d69-7aee7d9726d9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chest X-Ray:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="152" y="0" width="403" height="20" uuid="93ce72fd-562d-42d9-a97c-9ee530d82a21"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{chest_xray}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="29" width="100" height="20" uuid="2cb4e678-58b2-4c50-b066-97a0fcd4eb0b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reason:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="152" y="29" width="403" height="20" uuid="c82f2442-3801-4be1-a85b-553d13b95f13"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reason}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="58" width="100" height="20" uuid="2120c864-f630-4745-a0b0-0a24afd7525d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Comments]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="152" y="58" width="403" height="20" uuid="963d5ce9-491f-4567-a589-b72728d7c8b0"/>
+				<box>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{comments}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

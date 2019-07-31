@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperPrint xmlns="http://jasperreports.sourceforge.net/jasperreports/print" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/print http://jasperreports.sourceforge.net/xsd/jasperprint.xsd" name="physician_print_physiciandata" pageWidth="555" pageHeight="802" topMargin="0" leftMargin="0" bottomMargin="0" rightMargin="0" locale="en_US" timezone="Asia/Karachi">
+	<property name="net.sf.jasperreports.export.xml.start.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.end.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.page.count" value="1"/>
+	<origin band="detail"/>
+	<page>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="d81a16f5-9dfa-4db1-a8d5-941d20877e24" x="0" y="2" width="100" height="20" origin="0" srcId="1" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Eye Left:]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="12a3c1ba-6cf5-4b4e-a121-04e3308c57e4" x="136" y="2" width="100" height="20" origin="0" srcId="2" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[asdf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="550865bf-fbf2-4dfd-9649-a70d55aa8b77" x="310" y="2" width="100" height="20" origin="0" srcId="3" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Eye Right]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="76aeb6ce-85aa-483e-ade8-a56bf9535571" x="455" y="2" width="100" height="20" origin="0" srcId="4" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[asdf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="2fbd8d1b-3a94-4dfd-bd59-1c470da468be" x="0" y="22" width="100" height="20" origin="0" srcId="5" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Ear Left:]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="28b995a6-fda8-46a1-83f9-1c6758bc6d54" x="136" y="22" width="100" height="20" origin="0" srcId="6" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[asdf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="cf075ba4-eb9e-4c04-b20c-489687a34da9" x="310" y="22" width="100" height="20" origin="0" srcId="7" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Ear Right]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="6c647e8b-2a3f-4ccd-acf4-8cd3785a0d40" x="456" y="22" width="100" height="20" origin="0" srcId="8" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[asdf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="8d13972e-7b61-44e9-bebc-7c32b0937d0c" x="0" y="42" width="100" height="20" origin="0" srcId="9" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[B.P.]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="e6b3d321-5617-4d64-8f1c-14057fb6b996" x="136" y="42" width="100" height="20" origin="0" srcId="10" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[asdf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="34790ebd-b187-4b99-bef9-b68a16554568" x="310" y="42" width="100" height="20" origin="0" srcId="11" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Heart]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="20a618c2-f8a5-496b-ab40-8b26c5650598" x="455" y="42" width="100" height="20" origin="0" srcId="12" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[asdf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="a1cd999c-c661-4809-bb57-2a1d6fae5b43" x="0" y="62" width="100" height="20" origin="0" srcId="13" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Height]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="606bced7-fa78-4c29-bc85-b861e0aa994d" x="136" y="62" width="100" height="20" origin="0" srcId="14" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[asdf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="95ff2795-d229-4f37-bacd-d02708529f02" x="310" y="62" width="100" height="20" origin="0" srcId="15" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Weight]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="39675dc0-9cac-442b-be9e-1ccdb287bc30" x="455" y="62" width="100" height="20" origin="0" srcId="16" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[asdf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="aae5f5b9-94cc-4d56-bfc8-cea61be5b613" x="0" y="112" width="100" height="20" origin="0" srcId="17" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Hernia]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="804b4bb1-e434-4013-91c2-409e36601f74" x="136" y="112" width="100" height="20" origin="0" srcId="18" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[adsf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="5642baa3-b5c4-4d30-8ea1-02c3d8c22c12" x="0" y="132" width="100" height="20" origin="0" srcId="19" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Varicos Veins]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="ea201902-8525-4ba4-900d-ccd01563cbe2" x="136" y="132" width="100" height="20" origin="0" srcId="20" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[asdf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="55123dbe-c725-4ca4-a401-6ed65df18e85" x="310" y="132" width="100" height="20" origin="0" srcId="21" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Extremities]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="5f37d445-82be-4edc-b61c-d3530b118e56" x="456" y="132" width="100" height="20" origin="0" srcId="22" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[asdf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="15c6780b-a976-4c22-89af-dce9e35e5ef7" x="0" y="152" width="100" height="20" origin="0" srcId="23" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Deformities]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="1ba85a96-ca7c-4c41-813d-38457de4fed1" x="136" y="152" width="100" height="20" origin="0" srcId="24" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[asdf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="b8d013d0-1cf6-4447-9ad7-fc1fddf6eb69" x="310" y="152" width="100" height="20" origin="0" srcId="25" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Skin]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="5f6dc83b-ba3a-4988-a54d-3d4ba8ada13d" x="456" y="152" width="100" height="20" origin="0" srcId="26" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[adsf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="19b1139c-1b64-43c9-b8e4-f500d24cdc00" x="0" y="172" width="100" height="20" origin="0" srcId="27" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Comments]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="9522f9b9-69b1-4078-894c-9b7eee1c095f" x="136" y="172" width="419" height="20" origin="0" srcId="28" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[Fit]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.09375" lineSpacingFactor="1.2578125" leadingOffset="-2.6367188">
+			<reportElement uuid="a06ce470-203d-4e4b-91d1-043fd3908096" x="0" y="87" width="236" height="20" origin="0" srcId="29" printId="1"/>
+			<font size="12" isBold="true"/>
+			<textContent><![CDATA[Others:]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="d81a16f5-9dfa-4db1-a8d5-941d20877e24" x="0" y="203" width="100" height="20" origin="0" srcId="1" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Eye Left:]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="12a3c1ba-6cf5-4b4e-a121-04e3308c57e4" x="136" y="203" width="100" height="20" origin="0" srcId="2" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[2sadf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="550865bf-fbf2-4dfd-9649-a70d55aa8b77" x="310" y="203" width="100" height="20" origin="0" srcId="3" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Eye Right]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="0.0">
+			<reportElement uuid="76aeb6ce-85aa-483e-ade8-a56bf9535571" x="455" y="203" width="100" height="20" origin="0" srcId="4" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="2fbd8d1b-3a94-4dfd-bd59-1c470da468be" x="0" y="223" width="100" height="20" origin="0" srcId="5" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Ear Left:]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="0.0">
+			<reportElement uuid="28b995a6-fda8-46a1-83f9-1c6758bc6d54" x="136" y="223" width="100" height="20" origin="0" srcId="6" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="cf075ba4-eb9e-4c04-b20c-489687a34da9" x="310" y="223" width="100" height="20" origin="0" srcId="7" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Ear Right]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="0.0">
+			<reportElement uuid="6c647e8b-2a3f-4ccd-acf4-8cd3785a0d40" x="456" y="223" width="100" height="20" origin="0" srcId="8" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="8d13972e-7b61-44e9-bebc-7c32b0937d0c" x="0" y="243" width="100" height="20" origin="0" srcId="9" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[B.P.]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="0.0">
+			<reportElement uuid="e6b3d321-5617-4d64-8f1c-14057fb6b996" x="136" y="243" width="100" height="20" origin="0" srcId="10" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="34790ebd-b187-4b99-bef9-b68a16554568" x="310" y="243" width="100" height="20" origin="0" srcId="11" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Heart]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="0.0">
+			<reportElement uuid="20a618c2-f8a5-496b-ab40-8b26c5650598" x="455" y="243" width="100" height="20" origin="0" srcId="12" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="a1cd999c-c661-4809-bb57-2a1d6fae5b43" x="0" y="263" width="100" height="20" origin="0" srcId="13" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Height]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="0.0">
+			<reportElement uuid="606bced7-fa78-4c29-bc85-b861e0aa994d" x="136" y="263" width="100" height="20" origin="0" srcId="14" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="95ff2795-d229-4f37-bacd-d02708529f02" x="310" y="263" width="100" height="20" origin="0" srcId="15" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Weight]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="0.0">
+			<reportElement uuid="39675dc0-9cac-442b-be9e-1ccdb287bc30" x="455" y="263" width="100" height="20" origin="0" srcId="16" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="aae5f5b9-94cc-4d56-bfc8-cea61be5b613" x="0" y="313" width="100" height="20" origin="0" srcId="17" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Hernia]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="0.0">
+			<reportElement uuid="804b4bb1-e434-4013-91c2-409e36601f74" x="136" y="313" width="100" height="20" origin="0" srcId="18" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="5642baa3-b5c4-4d30-8ea1-02c3d8c22c12" x="0" y="333" width="100" height="20" origin="0" srcId="19" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Varicos Veins]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="ea201902-8525-4ba4-900d-ccd01563cbe2" x="136" y="333" width="100" height="20" origin="0" srcId="20" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[asdf]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="55123dbe-c725-4ca4-a401-6ed65df18e85" x="310" y="333" width="100" height="20" origin="0" srcId="21" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Extremities]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="0.0">
+			<reportElement uuid="5f37d445-82be-4edc-b61c-d3530b118e56" x="456" y="333" width="100" height="20" origin="0" srcId="22" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="15c6780b-a976-4c22-89af-dce9e35e5ef7" x="0" y="353" width="100" height="20" origin="0" srcId="23" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Deformities]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="0.0">
+			<reportElement uuid="1ba85a96-ca7c-4c41-813d-38457de4fed1" x="136" y="353" width="100" height="20" origin="0" srcId="24" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="b8d013d0-1cf6-4447-9ad7-fc1fddf6eb69" x="310" y="353" width="100" height="20" origin="0" srcId="25" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Skin]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="0.0">
+			<reportElement uuid="5f6dc83b-ba3a-4988-a54d-3d4ba8ada13d" x="456" y="353" width="100" height="20" origin="0" srcId="26" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="19b1139c-1b64-43c9-b8e4-f500d24cdc00" x="0" y="373" width="100" height="20" origin="0" srcId="27" printId="2"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Comments]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="9522f9b9-69b1-4078-894c-9b7eee1c095f" x="136" y="373" width="419" height="20" origin="0" srcId="28" printId="2"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[null]]></textContent>
+		</text>
+		<text textAlignment="Center" verticalAlignment="Middle" textHeight="15.09375" lineSpacingFactor="1.2578125" leadingOffset="-2.6367188">
+			<reportElement uuid="a06ce470-203d-4e4b-91d1-043fd3908096" x="0" y="288" width="236" height="20" origin="0" srcId="29" printId="2"/>
+			<font size="12" isBold="true"/>
+			<textContent><![CDATA[Others:]]></textContent>
+		</text>
+	</page>
+</jasperPrint>

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="repeattest_print" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9441c708-950f-4dcf-b387-1052f0994d98">
+	<property name="ireport.zoom" value="1.210000000000005"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="lab_no" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["F:\\workspace\\HDC\\WebContent\\WEB-INF\\reports\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select p.live_picture, l.lab_no, l.date as test_date, p.name as client_name, a.name as agency_name, p.father_name, pr.name as profession_name, p.dob, p.nationality, p.cnic, p.gamca_no, p.gender, p.passport, p.marital_status, p.issue_date, c.nicename, p.expiry_date, l.medical, p.issue_place, l.fee, l.collection_date, l.previous_lab_no, l.test_type from labtest l, profile p, agency a, profession pr, country c where p.passport = l.passport_no and p.agency_id = a.id and p.profession_id = pr.id and p.dest_country = c.id and l.lab_no =  $P{lab_no}]]>
+	</queryString>
+	<field name="lab_no" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="client_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="medical" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fee" class="java.lang.Number">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="live_picture" class="java.io.InputStream"/>
+	<field name="test_date" class="java.util.Date"/>
+	<field name="agency_name" class="java.lang.String"/>
+	<field name="father_name" class="java.lang.String"/>
+	<field name="profession_name" class="java.lang.String"/>
+	<field name="dob" class="java.util.Date"/>
+	<field name="nationality" class="java.lang.String"/>
+	<field name="cnic" class="java.lang.String"/>
+	<field name="gamca_no" class="java.lang.String"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="passport" class="java.lang.String"/>
+	<field name="marital_status" class="java.lang.String"/>
+	<field name="issue_date" class="java.util.Date"/>
+	<field name="nicename" class="java.lang.String"/>
+	<field name="expiry_date" class="java.util.Date"/>
+	<field name="issue_place" class="java.lang.String"/>
+	<field name="collection_date" class="java.util.Date"/>
+	<field name="previous_lab_no" class="java.lang.String"/>
+	<field name="test_type" class="java.lang.String"/>
+	<variable name="FeeSum" class="java.math.BigDecimal" calculation="Sum">
+		<variableExpression><![CDATA[$F{fee}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="107" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="2" width="555" height="1" uuid="5f7f4bc5-03bb-44b4-aaa0-cb1b81deaf22"/>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="1" y="104" width="555" height="1" uuid="2d548e73-a59a-411f-868c-9dca846e2c0d"/>
+			</line>
+			<image isUsingCache="false">
+				<reportElement x="447" y="6" width="108" height="94" uuid="ec5e8c8c-6ecb-404d-a125-be7eb96771f3"/>
+				<imageExpression><![CDATA[$F{live_picture}]]></imageExpression>
+			</image>
+			<subreport>
+				<reportElement x="1" y="5" width="436" height="100" uuid="95a2a03c-9d99-4945-8690-5bc16c628cf9"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "headings.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="613" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="336" width="555" height="1" uuid="eb02e6a0-2c30-4334-9aba-503b337fe634"/>
+			</line>
+			<textField evaluationTime="Band" pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="122" y="5" width="162" height="20" backcolor="#CCCCCC" uuid="5790ac2b-612e-465b-ab0d-8563490d0ceb"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lab_no}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="dd/MM/yyyy h.mm a">
+				<reportElement x="406" y="5" width="146" height="20" backcolor="#CCCCCC" uuid="5a3eabc7-d834-4527-9a87-d6a80d2d42e5"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{test_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="5" width="121" height="20" forecolor="#000000" uuid="4711148a-1674-4024-a37e-f9b0f6495d2a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Repeat Test Pin No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="5" width="106" height="20" forecolor="#000000" uuid="390eebe2-54fa-47a8-a0ab-51ac27f2b07c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="30" width="106" height="20" forecolor="#000000" uuid="c7f0eba0-4cd1-4b01-a979-19dfd2d7d1cb"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Agency:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="30" width="121" height="20" forecolor="#000000" uuid="e0464e6b-0398-4f75-9513-24821da69e11"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer Name:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="406" y="30" width="146" height="20" backcolor="#CCCCCC" uuid="3cb4a575-ebfb-4681-9c57-b331333e9a58"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{agency_name}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Band" pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="122" y="30" width="162" height="20" backcolor="#CCCCCC" uuid="197981e7-0c0b-44c1-97ad-ef46353b8534"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{client_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="55" width="106" height="20" forecolor="#000000" uuid="553ad5c6-d3b2-4203-9104-a39951c849ad"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Profession:]]></text>
+			</staticText>
+			<textField evaluationTime="Band" pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="122" y="55" width="162" height="20" backcolor="#CCCCCC" uuid="03d58a89-bfc6-46b0-8ad7-fa171e9bae44"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{father_name}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="406" y="55" width="146" height="20" backcolor="#CCCCCC" uuid="867f49c4-07d1-4388-a22f-68350664f722"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{profession_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="55" width="121" height="20" forecolor="#000000" uuid="6434dccd-b00d-4ca8-861c-292f792a9924"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Father Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="80" width="106" height="20" forecolor="#000000" uuid="91aecf68-15d9-4620-89b4-01809612560e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nationality:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="80" width="121" height="20" forecolor="#000000" uuid="39aa7c6f-dec8-4ee3-876a-69417b9ce0d2"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of Birth:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="406" y="80" width="146" height="20" backcolor="#CCCCCC" uuid="9b8a37c0-70aa-461e-8d65-9be3d99002ec"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nationality}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Band" pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="122" y="80" width="162" height="20" backcolor="#CCCCCC" uuid="88306f0f-bbba-4954-a26e-0a5506444af1"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dob}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="107" width="106" height="20" forecolor="#000000" uuid="04877017-6a19-46df-9b1d-1fc4aba03d58"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gamca No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="107" width="121" height="20" forecolor="#000000" uuid="12e0f545-7ca5-4593-bb78-1fdf95eb74bf"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CNIC:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="406" y="107" width="146" height="20" backcolor="#CCCCCC" uuid="712dac6d-523e-42db-8db3-c7394db26ec2"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gamca_no}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Band" pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="122" y="107" width="162" height="20" backcolor="#CCCCCC" uuid="437d992f-67f0-4c5d-babf-fa0482c33aa5"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cnic}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="406" y="132" width="146" height="20" backcolor="#CCCCCC" uuid="7c9868c1-ef89-4a50-876b-d2b346475056"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{passport}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="132" width="106" height="20" forecolor="#000000" uuid="3ea41893-0b1b-47c1-9dc5-707b9bf8644b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Passport No:]]></text>
+			</staticText>
+			<textField evaluationTime="Band" pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="122" y="132" width="162" height="20" backcolor="#CCCCCC" uuid="7b72072b-4514-44ab-8bb3-5c8a908d3c5b"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="132" width="121" height="20" forecolor="#000000" uuid="080ce0bd-e088-42b6-9b81-2345615bf7e6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="dd-MMM-yyyy">
+				<reportElement x="406" y="159" width="146" height="20" backcolor="#CCCCCC" uuid="27e0dcd0-b99d-43e0-b7ca-f3d342b70951"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{issue_date}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Band" pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="122" y="159" width="162" height="20" backcolor="#CCCCCC" uuid="eae47946-ae9b-4fdd-9dba-182319f09d73"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{marital_status}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="159" width="121" height="20" forecolor="#000000" uuid="e6968a2b-792f-4f97-9494-35a5d72d2fd1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Marital Status:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="159" width="106" height="20" forecolor="#000000" uuid="83b13cf7-d9b9-4696-8a1b-68a430f79ad0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Issue Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="185" width="106" height="20" forecolor="#000000" uuid="5efb2390-ebc3-4ab8-885f-b7ffde3c9cf8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Expiry Date:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="dd-MMM-yyyy">
+				<reportElement x="406" y="185" width="146" height="20" backcolor="#CCCCCC" uuid="f35b8333-9333-44cc-bafb-946293c5d758"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{expiry_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="185" width="121" height="20" forecolor="#000000" uuid="242a4509-af8b-4ac4-beba-8722847585a1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Country:]]></text>
+			</staticText>
+			<textField evaluationTime="Band" pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="122" y="185" width="162" height="20" backcolor="#CCCCCC" uuid="1ac0da83-2275-492e-b4f5-f2b313d5d86f"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nicename}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="211" width="106" height="20" forecolor="#000000" uuid="367dedbf-7608-497f-adbb-886d62d00813"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Issue Place:]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="406" y="211" width="146" height="20" backcolor="#CCCCCC" uuid="b53d2f35-e52a-4bc8-95cc-bb9d2e9d8b2d"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{issue_place}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="211" width="121" height="20" forecolor="#000000" uuid="83f9ebe3-3944-4fe4-89b3-7bcfca307a7e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medical:]]></text>
+			</staticText>
+			<textField evaluationTime="Band" pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="122" y="211" width="162" height="20" backcolor="#CCCCCC" uuid="b7b9958e-6f85-4bec-9053-3717e76561a5"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medical}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="237" width="121" height="20" forecolor="#000000" uuid="60862622-e32c-4295-803c-bcfd1ae01a66"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medical Fee:]]></text>
+			</staticText>
+			<textField evaluationTime="Band" pattern="">
+				<reportElement isPrintRepeatedValues="false" x="122" y="237" width="162" height="20" backcolor="#CCCCCC" uuid="13d0fe56-c67a-4365-b830-2057e2d0d33a"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fee}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="261" width="121" height="20" forecolor="#000000" uuid="ed81d514-f3b7-430a-afb7-2fa15aee2d0d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Collection Date:]]></text>
+			</staticText>
+			<textField evaluationTime="Band" pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="122" y="261" width="162" height="20" backcolor="#CCCCCC" uuid="d7eaac83-6ae7-43a3-8333-d8a73c6f1495"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{collection_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="342" width="52" height="20" forecolor="#000000" uuid="87e3e657-9407-4c73-a317-94eb18c2a9fe"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Doctor:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="163" y="343" width="78" height="20" forecolor="#000000" uuid="3de67c00-45aa-4137-8590-c6953551a5d8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Blood/Urine:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="367" y="342" width="80" height="20" forecolor="#000000" uuid="ce6d57d9-46b6-4325-926c-504ebc709f80"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X-Ray]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="371" width="192" height="20" forecolor="#000000" uuid="d62d43f3-ef94-48bd-8435-deb3d2782b08"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLEASE COLLECT REPORT ON ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="371" width="192" height="20" forecolor="#000000" uuid="a6f53d4a-6525-4604-9bf1-939adcfe156b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AFTER 2:00 PM]]></text>
+			</staticText>
+			<textField evaluationTime="Band" pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="192" y="371" width="108" height="20" backcolor="#CCCCCC" uuid="b5ac5faf-e4c1-4d05-aec8-a1f67cfacef5"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{collection_date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="53" y="343" width="110" height="20" forecolor="#000000" uuid="363db22d-7d34-4001-8b60-1ad63a69a001"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="241" y="343" width="126" height="20" forecolor="#000000" uuid="188a7920-5d25-4e8b-97a1-8a0b62763ea8"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="447" y="343" width="109" height="20" forecolor="#000000" uuid="6d28f9cf-879c-4980-9075-a7e1d572e8b2"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="298" width="121" height="20" forecolor="#000000" uuid="0ef2b404-9288-44c3-902b-715f74c4a1c0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Previous Pin No:]]></text>
+			</staticText>
+			<textField evaluationTime="Band" pattern="dd-MMM-yyyy">
+				<reportElement isPrintRepeatedValues="false" x="122" y="298" width="162" height="20" backcolor="#CCCCCC" uuid="15a3a34d-b922-4a4d-92fb-180a55d1049f"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{previous_lab_no}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="237" width="255" height="20" forecolor="#000000" uuid="a33c102a-4b1e-4776-85f8-25bd7ff96e04"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Tests to Repeat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="261" width="106" height="20" forecolor="#000000" uuid="6ce34559-1a78-4666-9e2d-b1ff512bce8d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Physical]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="406" y="261" width="146" height="20" backcolor="#CCCCCC" uuid="3117ba00-c2b0-4242-bb00-313d1a132b8a"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{test_type}.contains("physician") ? "Yes" : "" )]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="301" y="284" width="106" height="20" forecolor="#000000" uuid="f907f9cf-0aa9-41cc-b41e-5e0b29fbf0a8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[X-Ray]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="407" y="283" width="146" height="20" backcolor="#CCCCCC" uuid="b07a92b4-5c9f-4616-94a3-dcf39a123edc"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{test_type}.contains("xray") ? "Yes" : "" )]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="300" y="306" width="106" height="20" forecolor="#000000" uuid="7ee196bf-8122-430f-9ac5-1ca7ccc5208e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lab Test]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="406" y="306" width="146" height="20" backcolor="#CCCCCC" uuid="2a248741-06c5-4a6e-96ca-a5ac3103c9ec"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Dialog" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[( $F{test_type}.contains("labtest") ? "Yes" : "" )]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="395" width="551" height="38" forecolor="#000000" uuid="8e8281ed-31cf-4936-861c-d26b5616352c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORT IS FINAL AND CANNOT BE CHANGED. ALL TESTS ARE DONE AS PER SPECIFICATION AND GUIDELINES OF GULF COUNCIL.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="13" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="10" splitType="Stretch"/>
+	</summary>
+</jasperReport>

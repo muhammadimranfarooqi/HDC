@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperPrint xmlns="http://jasperreports.sourceforge.net/jasperreports/print" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/print http://jasperreports.sourceforge.net/xsd/jasperprint.xsd" name="xray_subfinalreport" pageWidth="280" pageHeight="802" topMargin="0" leftMargin="0" bottomMargin="0" rightMargin="0" locale="en_US" timezone="Asia/Karachi">
+	<property name="net.sf.jasperreports.export.xml.start.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.end.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.page.count" value="1"/>
+	<origin band="detail"/>
+	<page>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="ef5a36d7-e3dc-49c3-8e02-d70e53e458fb" x="177" y="40" width="103" height="20" origin="0" srcId="1" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[ test dsaf ]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="103eb554-efc2-4440-b47f-652cde25671d" x="0" y="20" width="177" height="20" origin="0" srcId="2" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[LUNGS:]]></textContent>
+		</text>
+		<text textAlignment="Left" verticalAlignment="Middle" textHeight="13.798828" lineSpacingFactor="1.1499023" leadingOffset="-2.3466797">
+			<reportElement uuid="fae11ecf-d06d-491a-9354-cd219bdbdc31" x="0" y="0" width="280" height="20" forecolor="#000000" origin="0" srcId="3" printId="1"/>
+			<font fontName="Arial" size="12" isBold="true"/>
+			<textContent><![CDATA[RESPIRATORY EXAM]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="56235146-d723-4565-85b3-149c5b3912ce" x="177" y="20" width="103" height="20" origin="0" srcId="4" printId="1"/>
+			<box>
+				<bottomPen lineWidth="0.5"/>
+			</box>
+			<font isBold="true"/>
+			<textContent><![CDATA[NAD]]></textContent>
+		</text>
+		<text verticalAlignment="Middle" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="02605007-1173-4802-854e-4affd80e19a0" x="0" y="40" width="177" height="20" origin="0" srcId="5" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[CHEST X-RAY:]]></textContent>
+		</text>
+	</page>
+</jasperPrint>
